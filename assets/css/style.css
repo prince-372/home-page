@@ -781,7 +781,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 14px;
   text-align: center;
 }
 
@@ -847,6 +847,8 @@ textarea {
 .end-1 {
   right: 1%;
 }
+
+
 
 /* media screens */
 @media (min-width:576px) {
@@ -945,6 +947,16 @@ textarea {
 
   .pt-100 {
     padding-top: 100px;
+  }
+  .show-moref {
+    background: rgba(45, 60, 174, 0.53);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
   }
 }
 
