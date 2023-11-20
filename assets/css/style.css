@@ -1,4 +1,4 @@
-@import url(root.css);
+@import url("./root.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Yantramanav:wght@400;500&display=swap');
 
 
@@ -465,7 +465,6 @@ left: 0;
 
 /* blue-area */
 
-
 .box {
   background-color: #3C50D4;
   padding: 17px 23px;
@@ -548,16 +547,16 @@ left: 0;
 }
 
 .common-img {
-
-
   transition: .4s;
 }
 
+.sec-3-card:hover .common-img{
+  transform: scale(1.1);
+}
 
 
-
-/* section-2 */
-.card1 {
+/* What make us special */
+.sec-card1 {
   border-radius: 5px;
   border: 1px solid #2C49FE;
   background: #FFF; 
@@ -567,23 +566,23 @@ left: 0;
   padding-top: 15px;
 }
 
-.card1:hover {
+.sec-card1:hover {
   background-color: #2C49FE;
 }
 
-.card1:hover .sharing-para {
+.sec-card1:hover .sharing-para {
   color: #FFFFFF;
 }
 
-.card1:hover .sharing {
+.sec-card1:hover .sharing {
   color: #FFFFFF;
 }
 
-.card1:hover .info {
+.sec-card1:hover .info {
   color: #FFFFFF;
 }
 
-.card1:hover .help {
+.sec-card1:hover .help {
   color: #FFFFFF;
 }
 
@@ -615,7 +614,7 @@ left: 0;
   margin-top: -40px;
 }
 
-/* section--3 */
+/* Lorem ipsum dolor sit amet */
 
 .img-bg {
   background-image: url(../image/sec-3-bg-img2.png), url(../image/sec-3-bg-img1.png);
@@ -632,7 +631,7 @@ left: 0;
   max-width: 765px;
 }
 
-/* section--4 */
+/* Explore our latest events */
 
 .mt-153 {
   margin-top: 30px;
@@ -1054,7 +1053,3 @@ textarea {
 
 
 
-
-.sec-3-card:hover .common-img{
-  transform: scale(1.1);
-}

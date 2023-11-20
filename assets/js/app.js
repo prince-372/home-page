@@ -29,21 +29,21 @@ home.addEventListener("click", function () {
     cross5.classList.toggle("cross-2");
     cross6.classList.toggle("cross-3");
 });
-events.addEventListener("click", function () {
+about.addEventListener("click", function () {
     a.classList.remove("fix-lft");
     flow.classList.remove("flow-hidden");
     cross4.classList.toggle("cross-1");
     cross5.classList.toggle("cross-2");
     cross6.classList.toggle("cross-3");
 }); 
-feed.addEventListener("click", function () {
+services.addEventListener("click", function () {
     a.classList.remove("fix-lft");
     flow.classList.remove("flow-hidden");
     cross4.classList.toggle("cross-1");
     cross5.classList.toggle("cross-2");
     cross6.classList.toggle("cross-3");
 });
-user.addEventListener("click", function () {
+pricing.addEventListener("click", function () {
     a.classList.remove("fix-lft");
     flow.classList.remove("flow-hidden");
     cross4.classList.toggle("cross-1");

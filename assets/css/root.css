@@ -9,7 +9,7 @@
     --fs-xl: 21px;
     --fs-xl1: 28px;
     --fs-xxl: 26px;
-    --fs-xxl1: 40px;
+    --fs-xxl1: 24px;
     --fs-xxl2: 37px;
 
     /* font-weight */
@@ -103,7 +103,6 @@
 .blue {
     color: var(--color-blue);
 }
-
 .text-dark-blue {
     color: var(--color-dark-blue);
 }
