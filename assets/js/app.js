@@ -1,4 +1,10 @@
+ // preloader
+ const preloader = document.getElementById("preloader");
+ setTimeout(() => {
+     document.getElementById("preloader").classList.add("d_none")
+     document.body.classList.remove("flow-hidden")
 
+ }, 2000);
 
 let a = document.getElementById("nav-bar");
 let flow = document.querySelector(".sec-flow");

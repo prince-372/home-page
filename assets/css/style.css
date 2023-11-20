@@ -112,68 +112,81 @@
 }
 
 /* prilorder */
-.overflow_hidden {
-  overflow: hidden;
+.background-lorder {
+  /* position: fixed; */
+  z-index: 9;
+  background: #000;
 }
 
-#preloder {
-  z-index: 5;
+.smooth-loder {
+  scroll-behavior: smooth;
 }
 
-.preloder {
-  animation: preloder_one 7s infinite;
-}
-.img-icon{
-  transform: scale(1.4);
-}
-@keyframes preloder_one {
-  0% {
-      transform: scale(1.1);
-  }
-  15% {
-      transform: scale(0.9);
-  }
-  30% {
-      transform: scale(1.2);
-  }
-  45% {
-      transform: scale(1);
-  }
-  60% {
-      transform: scale(1.3);
-  }
-  75% {
-      transform: scale(0.9);
-  }
-  90% {
-      transform: scale(1.3);
-  }
-}
-
-.vh-100{
+.vh-100 {
   min-height: 100vh;
 }
 
-.w-100{
-  width: 100%;
-}
-.z-5{
-  z-index: 5;
-}
-.position-fixed{
+.position-fixed {
   position: fixed;
 }
-.top-0{
-  top: 0;
-}
-.start-0{
-left: 0;
+
+.z-6 {
+  z-index: 6;
 }
 
-.d-none{
+.start-0 {
+  left: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+.micro{
+animation-name: preloder_one;
+animation-duration: 3s;
+animation-timing-function: linear;
+}
+
+@keyframes preloder_one {
+  0% {
+    transform: scale(1.1);
+  }
+
+  15% {
+    transform: scale(0.9);
+  }
+
+  30% {
+    transform: scale(1.2);
+  }
+
+  45% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.3);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  90% {
+    transform: scale(1.3);
+  }
+}
+
+
+.d-none {
   display: none;
 }
-.d-block{
+
+.d_none {
+  display: none;
+}
+
+.d-block {
   display: block;
 }
 
@@ -338,7 +351,7 @@ left: 0;
   margin-top: 265px;
 }
 
-.mb-40{
+.mb-40 {
   margin-bottom: 40px;
 }
 
@@ -403,11 +416,11 @@ left: 0;
 /*----------------------------------- nav section -----------------------------------*/
 
 
-.fw-h {
+.icon-bold {
   transition: all linear 500;
 }
 
-.fw-h:hover {
+.icon-bold:hover {
   -webkit-text-stroke: .6px;
 }
 
@@ -463,7 +476,7 @@ left: 0;
   background: #2C49FE;
 }
 
-/* blue-area */
+/* box-blue */
 
 .box {
   background-color: #3C50D4;
@@ -471,7 +484,7 @@ left: 0;
   border-radius: 50px;
 }
 
-.loco {
+.space {
   margin-left: 15px;
 }
 
@@ -482,7 +495,7 @@ left: 0;
   padding-bottom: 17px;
 }
 
-.blue-area {
+.box-blue {
   width: 80%;
 }
 
@@ -498,7 +511,7 @@ left: 0;
   margin-bottom: 45px;
 }
 
-.go-cheak {
+.check-btn {
   border-radius: 150px;
   background: #FFF;
   padding: 20px 40px;
@@ -507,7 +520,7 @@ left: 0;
   transition: .4s;
 }
 
-.go-cheak:hover {
+.check-btn:hover {
   background: transparent;
   color: #FFF;
   border: 1px solid #fff;
@@ -550,7 +563,7 @@ left: 0;
   transition: .4s;
 }
 
-.sec-3-card:hover .common-img{
+.sec-3-card:hover .common-img {
   transform: scale(1.1);
 }
 
@@ -559,7 +572,7 @@ left: 0;
 .sec-card1 {
   border-radius: 5px;
   border: 1px solid #2C49FE;
-  background: #FFF; 
+  background: #FFF;
   margin-right: 15px;
   margin-top: 50px;
   transition: .4s;
@@ -649,7 +662,7 @@ left: 0;
   border-radius: 5px;
   background: #FFF;
   transition: .4s;
-  box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.06); 
+  box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   padding: 12px;
 }
@@ -692,8 +705,7 @@ left: 0;
   overflow: hidden;
 }
 
-.btns3 {
-
+.sign-btn {
   width: 100%;
   padding: 11px 28px;
   justify-content: space-between;
@@ -702,6 +714,12 @@ left: 0;
   background: #2C49FE;
   border: solid #2C49FE;
   margin-bottom: 90px;
+  transition: .4s;
+}
+
+.sign-btn:hover {
+  background-color: #FFF;
+  color: #2C49FE;
 }
 
 .w-50 {
@@ -775,10 +793,11 @@ textarea {
   margin-top: 43px;
 }
 
-.f-icon{
+.f-icon {
   transition: .4s;
 }
-.f-icon:hover{
+
+.f-icon:hover {
   transform: translateY(-40%);
 }
 
@@ -821,11 +840,12 @@ textarea {
   display: block;
 }
 
-.bottom-0{
-  bottom: 0;
+.bottom-1 {
+  bottom: 1%;
 }
-.end-0{
-  right: 0;
+
+.end-1 {
+  right: 1%;
 }
 
 /* media screens */
@@ -882,7 +902,7 @@ textarea {
     margin-top: 0;
   }
 
-  .blue-area::after {
+  .box-blue::after {
     content: url('');
     height: 100%;
     width: 2px;
@@ -892,7 +912,7 @@ textarea {
     top: 0;
   }
 
-  .blue-area::before {
+  .box-blue::before {
     content: url('');
     height: 2px;
     width: 100%;
@@ -996,11 +1016,11 @@ textarea {
     margin-bottom: 0;
   }
 
-  .blue-area::after {
+  .box-blue::after {
     content: unset;
   }
 
-  .blue-area::before {
+  .box-blue::before {
     content: unset;
   }
 
@@ -1038,7 +1058,7 @@ textarea {
     width: 100%;
     max-width: 400px;
     height: 100%;
-    background:  var(--color-light-blue);
+    background: var(--color-light-blue);
     z-index: 3;
     box-shadow: 0px 0px 19px 9px rgba(0, 0, 0, 0.10);
     transition: all 500ms linear;
@@ -1049,7 +1069,3 @@ textarea {
   }
 
 }
-
-
-
-
